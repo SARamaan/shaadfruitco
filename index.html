@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shaad Fruit Company - Fresh Fruits and Vegetables</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaad Fruit Company</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
 
-    header {
+    .menu {
       background-color: #4CAF50;
       color: white;
       text-align: center;
       padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .menu a:hover {
+      color: #3e8e41;
     }
 
     .container {
@@ -31,38 +44,32 @@
       margin-bottom: 20px;
     }
 
-    .menu {
-      background-color: #333;
-      color: white;
-      padding: 10px;
+    p {
       text-align: center;
+      margin-bottom: 20px;
     }
 
-    .menu-item {
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
       display: inline-block;
-      margin: 10px;
-      cursor: pointer;
-    }
-
-    .menu-item:hover {
-      background-color: #444;
-    }
-
-    .icon {
-      width: 80px;
-      height: 80px;
-      margin: 10px;
-    }
-
-    .rate {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .description {
       font-size: 16px;
-      margin-top: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
     }
 
     /* Responsive Design */
@@ -70,23 +77,22 @@
       .container {
         width: 95%;
       }
-      .icon {
-        width: 60px;
-        height: 60px;
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shaad Fruit Company - Fresh Fruits and Vegetables</h1>
-  </header>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="fruits.html">Fruits</a>
+    <a href="vegetables.html">Vegetables</a>
+  </div>
 
   <div class="container">
-    <div class="menu">
-      <div class="menu-item" onclick="location.href='fruits.html';">Fruits</div>
-      <div class="menu-item" onclick="location.href='vegetables.html';">Vegetables</div>
-      <div class="menu-item">About Owner</div>
+    <h1>Welcome to Shaad Fruit Company</h1>
+    <p>We offer a wide variety of fresh fruits and vegetables.</p>
+    <div class="button-container">
+      <a class="button" href="fruits.html">View Fruits</a>
+      <a class="button" href="vegetables.html">View Vegetables</a>
     </div>
   </div>
 </body>
