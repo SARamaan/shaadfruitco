@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shaad Fruit Company</title>
+  <title>Shaad Fruit Company - Home</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,26 +11,35 @@
       padding: 0;
     }
 
-    .menu {
+   .header {
       background-color: #4CAF50;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-around;
+      padding: 20px;
     }
 
-    .menu a {
+   .header h1 {
+      margin: 0;
+    }
+
+   .nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+   .nav a {
       color: white;
       text-decoration: none;
-      font-size: 18px;
+      margin: 0 20px;
     }
 
-    .menu a:hover {
-      color: #3e8e41;
+   .nav a:hover {
+      color: #ccc;
     }
 
-    .container {
+   .container {
       width: 80%;
       margin: 20px auto;
       background-color: white;
@@ -39,22 +48,17 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+   .welcome {
       text-align: center;
       margin-bottom: 20px;
     }
 
-    p {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .button-container {
+   .button-container {
       text-align: center;
       margin-top: 20px;
     }
 
-    .button {
+   .button {
       background-color: #4CAF50;
       border: none;
       color: white;
@@ -68,31 +72,39 @@
       border-radius: 5px;
     }
 
-    .button:hover {
+   .button:hover {
       background-color: #3e8e41;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
+     .container {
         width: 95%;
       }
     }
   </style>
 </head>
 <body>
-  <div class="menu">
-    <a href="index.html">Home</a>
+  <div class="header">
+    <h1>Shaad Fruit Company</h1>
+  </div>
+
+  <div class="nav">
     <a href="fruits.html">Fruits</a>
     <a href="vegetables.html">Vegetables</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
   </div>
 
   <div class="container">
-    <h1>Welcome to Shaad Fruit Company</h1>
-    <p>We offer a wide variety of fresh fruits and vegetables.</p>
+    <div class="welcome">
+      <h1>Welcome to Shaad Fruit Company!</h1>
+      <p>We offer a wide variety of fresh fruits and vegetables at competitive prices.</p>
+    </div>
+
     <div class="button-container">
-      <a class="button" href="fruits.html">View Fruits</a>
-      <a class="button" href="vegetables.html">View Vegetables</a>
+      <a href="fruits.html" class="button">Explore Fruits</a>
+      <a href="vegetables.html" class="button">Explore Vegetables</a>
     </div>
   </div>
 </body>
