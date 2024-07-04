@@ -11,26 +11,35 @@
       padding: 0;
     }
 
-  .menu {
+   .header {
       background-color: #4CAF50;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-around;
+      padding: 20px;
     }
 
-  .menu a {
+   .header h1 {
+      margin: 0;
+    }
+
+   .nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+   .nav a {
       color: white;
       text-decoration: none;
-      font-size: 18px;
+      margin: 0 20px;
     }
 
-  .menu a:hover {
-      color: #3e8e41;
+   .nav a:hover {
+      color: #ccc;
     }
 
-  .container {
+   .container {
       width: 80%;
       margin: 20px auto;
       background-color: white;
@@ -39,92 +48,85 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+   .table-container {
+      overflow-x: auto;
     }
 
-    p {
-      text-align: center;
-      margin-bottom: 20px;
+   table {
+      border-collapse: collapse;
+      width: 100%;
     }
 
-  .button-container {
-      text-align: center;
-      margin-top: 20px;
+   th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
     }
 
-  .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-  .button:hover {
-      background-color: #3e8e41;
+   .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-    .container {
+     .container {
         width: 95%;
       }
     }
   </style>
 </head>
 <body>
-  <div class="menu">
+  <div class="header">
+    <h1>Shaad Fruit Company - Fresh Vegetables</h1>
+  </div>
+
+  <div class="nav">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact Us</a>
     <a href="fruits.html">Fruits</a>
     <a href="vegetables.html">Vegetables</a>
-    <a href="index.html" style="float:right;">Back</a>
   </div>
 
   <div class="container">
     <h1>Fresh Vegetables</h1>
     <p>Today's Date: Thursday, July 4, 2024</p>
-    <table>
-      <tr>
-        <th>Vegetable</th>
-        <th>Icon</th>
-        <th>Price per Cup Equivalent (INR)</th>
-        <th>Price per Pound (INR)</th>
-      </tr>
-      <tr>
-        <td>Carrots</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Carrot-icon.png" class="icon" alt="Carrot icon"></td>
-        <td>₹ 25</td>
-        <td>₹ 50</td>
-      </tr>
-      <tr>
-        <td>Broccoli</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Broccoli-icon.png" class="icon" alt="Broccoli icon"></td>
-        <td>₹ 30</td>
-        <td>₹ 60</td>
-      </tr>
-      <tr>
-        <td>Onions</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Onion-icon.png" class="icon" alt="Onion icon"></td>
-        <td>₹ 20</td>
-        <td>₹ 40</td>
-      </tr>
-      <tr>
-        <td>Potatoes</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Potato-icon.png" class="icon" alt="Potato icon"></td>
-        <td>₹ 35</td>
-        <td>₹ 70</td>
-      </tr>
-    </table>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Vegetable</th>
+          <th>Icon</th>
+          <th>Price per Cup Equivalent (INR)</th>
+          <th>Price per Pound (INR)</th>
+        </tr>
+        <tr>
+          <td>Carrots</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Carrot-icon.png" class="icon" alt="Carrot icon"></td>
+          <td>₹ 25</td>
+          <td>₹ 50</td>
+        </tr>
+        <tr>
+          <td>Broccoli</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Broccoli-icon.png" class="icon" alt="Broccoli icon"></td>
+          <td>₹ 30</td>
+          <td>₹ 60</td>
+        </tr>
+        <tr>
+          <td>Onions</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Onion-icon.png" class="icon" alt="Onion icon"></td>
+          <td>₹ 20</td>
+          <td>₹ 40</td>
+        </tr>
+        <tr>
+          <td>Potatoes</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Potato-icon.png" class="icon" alt="Potato icon"></td>
+          <td>₹ 35</td>
+          <td>₹ 70</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
