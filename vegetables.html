@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shaad Fruit Company - Fresh Vegetables</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
 
-    header {
+  .menu {
       background-color: #4CAF50;
       color: white;
       text-align: center;
       padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
     }
 
-    .container {
+  .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+  .menu a:hover {
+      color: #3e8e41;
+    }
+
+  .container {
       width: 80%;
       margin: 20px auto;
       background-color: white;
@@ -31,63 +44,87 @@
       margin-bottom: 20px;
     }
 
-    .vegetable {
-      background-color: #eee;
-      padding: 20px;
+    p {
+      text-align: center;
       margin-bottom: 20px;
+    }
+
+  .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+  .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
       border-radius: 5px;
     }
 
-    .icon {
-      width: 80px;
-      height: 80px;
-      margin: 10px;
-    }
-
-    .rate {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .description {
-      font-size: 16px;
-      margin-top: 10px;
+  .button:hover {
+      background-color: #3e8e41;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
+    .container {
         width: 95%;
-      }
-      .icon {
-        width: 60px;
-        height: 60px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shaad Fruit Company - Fresh Vegetables</h1>
-  </header>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="fruits.html">Fruits</a>
+    <a href="vegetables.html">Vegetables</a>
+    <a href="index.html" style="float:right;">Back</a>
+  </div>
 
   <div class="container">
-    <div class="vegetable">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/carrot-icon.svg" class="icon" alt="Carrot icon">
-      <div class="rate">₹ 40 per cup</div>
-      <div class="description">Crisp and sweet carrots, great for salads.</div>
-    </div>
-    <div class="vegetable">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/broccoli-icon.svg" class="icon" alt="Broccoli icon">
-      <div class="rate">₹ 50 per cup</div>
-      <div class="description">Fresh and tender broccoli, perfect for stir-fries.</div>
-    </div>
-    <div class="vegetable">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/cucumber-icon.svg" class="icon" alt="Cucumber icon">
-      <div class="rate">₹ 30 per cup</div>
-      <div class="description">Crisp and refreshing cucumbers, great for salads.</div>
-    </div>
+    <h1>Fresh Vegetables</h1>
+    <p>Today's Date: Thursday, July 4, 2024</p>
+    <table>
+      <tr>
+        <th>Vegetable</th>
+        <th>Icon</th>
+        <th>Price per Cup Equivalent (INR)</th>
+        <th>Price per Pound (INR)</th>
+      </tr>
+      <tr>
+        <td>Carrots</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Carrot-icon.png" class="icon" alt="Carrot icon"></td>
+        <td>₹ 25</td>
+        <td>₹ 50</td>
+      </tr>
+      <tr>
+        <td>Broccoli</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Broccoli-icon.png" class="icon" alt="Broccoli icon"></td>
+        <td>₹ 30</td>
+        <td>₹ 60</td>
+      </tr>
+      <tr>
+        <td>Onions</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Onion-icon.png" class="icon" alt="Onion icon"></td>
+        <td>₹ 20</td>
+        <td>₹ 40</td>
+      </tr>
+      <tr>
+        <td>Potatoes</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Potato-icon.png" class="icon" alt="Potato icon"></td>
+        <td>₹ 35</td>
+        <td>₹ 70</td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
