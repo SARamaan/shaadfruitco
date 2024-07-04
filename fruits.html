@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shaad Fruit Company - Fresh Fruits</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
 
-    header {
+   .menu {
       background-color: #4CAF50;
       color: white;
       text-align: center;
       padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
     }
 
-    .container {
+   .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+   .menu a:hover {
+      color: #3e8e41;
+    }
+
+   .container {
       width: 80%;
       margin: 20px auto;
       background-color: white;
@@ -31,63 +44,87 @@
       margin-bottom: 20px;
     }
 
-    .fruit {
-      background-color: #eee;
-      padding: 20px;
+    p {
+      text-align: center;
       margin-bottom: 20px;
+    }
+
+   .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+   .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
       border-radius: 5px;
     }
 
-    .icon {
-      width: 80px;
-      height: 80px;
-      margin: 10px;
-    }
-
-    .rate {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .description {
-      font-size: 16px;
-      margin-top: 10px;
+   .button:hover {
+      background-color: #3e8e41;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
+     .container {
         width: 95%;
-      }
-      .icon {
-        width: 60px;
-        height: 60px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shaad Fruit Company - Fresh Fruits</h1>
-  </header>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="fruits.html">Fruits</a>
+    <a href="vegetables.html">Vegetables</a>
+    <a href="index.html" style="float:right;">Back</a>
+  </div>
 
   <div class="container">
-    <div class="fruit">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/apple-fruit-icon.svg" class="icon" alt="Apple icon">
-      <div class="rate">₹ 50 per cup</div>
-      <div class="description">Fresh and juicy apples, perfect for snacking.</div>
-    </div>
-    <div class="fruit">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/banana-fruit-icon.svg" class="icon" alt="Banana icon">
-      <div class="rate">₹ 20 per cup</div>
-      <div class="description">Ripe and creamy bananas, great for smoothies.</div>
-    </div>
-    <div class="fruit">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/fruits-vegetables/orange-fruit-icon.svg" class="icon" alt="Orange icon">
-      <div class="rate">₹ 35 per cup</div>
-      <div class="description">Juicy and sweet oranges, perfect for snacking.</div>
-    </div>
+    <h1>Fresh Fruits</h1>
+    <p>Today's Date: Thursday, July 4, 2024</p>
+    <table>
+      <tr>
+        <th>Fruit</th>
+        <th>Icon</th>
+        <th>Price per Cup Equivalent (INR)</th>
+        <th>Price per Pound (INR)</th>
+      </tr>
+      <tr>
+        <td>Apples</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Apple-icon.png" class="icon" alt="Apple icon"></td>
+        <td>₹ 50</td>
+        <td>₹ 125</td>
+      </tr>
+      <tr>
+        <td>Watermelon</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Watermelon-icon.png" class="icon" alt="Watermelon icon"></td>
+        <td>₹ 24</td>
+        <td>₹ 50</td>
+      </tr>
+      <tr>
+        <td>Bananas</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Banana-icon.png" class="icon" alt="Banana icon"></td>
+        <td>₹ 30</td>
+        <td>₹ 60</td>
+      </tr>
+      <tr>
+        <td>Oranges</td>
+        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Orange-icon.png" class="icon" alt="Orange icon"></td>
+        <td>₹ 35</td>
+        <td>₹ 70</td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
