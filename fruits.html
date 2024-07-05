@@ -11,7 +11,7 @@
       padding: 0;
     }
 
-   .menu {
+  .menu {
       background-color: #4CAF50;
       color: white;
       text-align: center;
@@ -20,17 +20,17 @@
       justify-content: space-around;
     }
 
-   .menu a {
+  .menu a {
       color: white;
       text-decoration: none;
       font-size: 18px;
     }
 
-   .menu a:hover {
+  .menu a:hover {
       color: #3e8e41;
     }
 
-   .container {
+  .container {
       width: 80%;
       margin: 20px auto;
       background-color: white;
@@ -49,32 +49,30 @@
       margin-bottom: 20px;
     }
 
-   .button-container {
-      text-align: center;
-      margin-top: 20px;
+  .table-container {
+      overflow-x: auto;
     }
 
-   .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 5px;
+   table {
+      border-collapse: collapse;
+      width: 100%;
     }
 
-   .button:hover {
-      background-color: #3e8e41;
+   th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+  .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-     .container {
+    .container {
         width: 95%;
       }
     }
@@ -93,38 +91,58 @@
   <div class="container">
     <h1>Fresh Fruits</h1>
     <p>Today's Date: Thursday, July 4, 2024</p>
-    <table>
-      <tr>
-        <th>Fruit</th>
-        <th>Icon</th>
-        <th>Price per Cup Equivalent (INR)</th>
-        <th>Price per Pound (INR)</th>
-      </tr>
-      <tr>
-        <td>Apples</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Apple-icon.png" class="icon" alt="Apple icon"></td>
-        <td>₹ 50</td>
-        <td>₹ 125</td>
-      </tr>
-      <tr>
-        <td>Watermelon</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Watermelon-icon.png" class="icon" alt="Watermelon icon"></td>
-        <td>₹ 24</td>
-        <td>₹ 50</td>
-      </tr>
-      <tr>
-        <td>Bananas</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Banana-icon.png" class="icon" alt="Banana icon"></td>
-        <td>₹ 30</td>
-        <td>₹ 60</td>
-      </tr>
-      <tr>
-        <td>Oranges</td>
-        <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Orange-icon.png" class="icon" alt="Orange icon"></td>
-        <td>₹ 35</td>
-        <td>₹ 70</td>
-      </tr>
-    </table>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Fruit</th>
+          <th>Icon</th>
+          <th>Price per Cup Equivalent (INR)</th>
+          <th>Price per Pound (INR)</th>
+        </tr>
+        <tr>
+          <td>Apples</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Apple-icon.png" class="icon" alt="Apple icon"></td>
+          <td>₹ 50</td>
+          <td>₹ 125</td>
+        </tr>
+        <tr>
+          <td>Watermelon</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Watermelon-icon.png" class="icon" alt="Watermelon icon"></td>
+          <td>₹ 24</td>
+          <td>₹ 50</td>
+        </tr>
+        <tr>
+          <td>Bananas</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Banana-icon.png" class="icon" alt="Banana icon"></td>
+          <td>₹ 30</td>
+          <td>₹ 60</td>
+        </tr>
+        <tr>
+          <td>Oranges</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Orange-icon.png" class="icon" alt="Orange icon"></td>
+          <td>₹ 35</td>
+          <td>₹ 70</td>
+        </tr>
+        <tr>
+          <td>Pineapples</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Pineapple-icon.png" class="icon" alt="Pineapple icon"></td>
+          <td>₹ 40</td>
+          <td>₹ 80</td>
+        </tr>
+        <tr>
+          <td>Grapes</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Grapes-icon.png" class="icon" alt="Grapes icon"></td>
+          <td>₹ 45</td>
+          <td>₹ 90</td>
+        </tr>
+        <tr>
+          <td>Mangoes</td>
+          <td><img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Food-Mango-icon.png" class="icon" alt="Mangoes icon"></td>
+          <td>₹ 50</td>
+          <td>₹ 100</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
